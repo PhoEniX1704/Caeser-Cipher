@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caesar Cipher</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-300 h-screen flex items-center justify-center">
+
+    <!-- Header -->
+    <header class="bg-blue-600 p-4 absolute top-0 left-0 w-full">
+        <div class="container mx-auto flex justify-center items-center">
+            <a href="#" class="text-white text-xl font-bold">Cryptos</a>
+        </div>
+    </header>
+
+    <!-- Caesar Cipher Form -->
+    <div class="bg-white p-6 rounded-lg shadow-md w-full max-w-md">
+        <form id="contactForm">
+            <h1 class="text-2xl font-bold mb-4 text-center">Caesar Cipher</h1>
+            <label for="input-text">Enter text:</label>
+            <input id="input-text" type="text" placeholder="Enter text" class="border p-2 w-full mb-4">
+            <label for="shift">Shift key:</label>
+            <input id="shift" type="number" placeholder="Shift value" class="border p-2 w-full mb-4">
+            <div class="flex-1 justify-center text-center">
+                <button id="encrypt-btn" class="rounded-md bg-blue-600 text-white px-4 py-2">Encode</button>
+                <button id="decrypt-btn" class="rounded-md bg-red-600 text-white px-4 py-2">Decode</button>
+            </div>
+            <p>
+            <label for="result">Result:</label>
+            <textarea class="h-auto rounded-sm border-2 w-full border-solid" id="result" rows="2" cols="10" placeholder="result" disabled></textarea>
+        </p>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
